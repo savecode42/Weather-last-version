@@ -1,0 +1,374 @@
+/*
+font-family: 'Antic Didone', serif;
+
+font-family: 'Antic Slab', serif;
+
+font-family: 'Inter', sans-serif;
+*/
+
+body{
+    --text-color:#1B365C;
+    --main-bg-card:#DEB9E8;
+    --pink-opacity:rgba(222, 185, 232, 0.30);
+    
+}
+.container{
+    background-color: #A3B2BF ;
+    color: #A3B2BF;
+    height:667px;    
+    border-radius: 12px;
+}
+
+.swiper {
+    width: 383px;
+    height: 600px;
+}
+  
+/* Slide Bar City Page */
+
+#slide-bar-close{
+    background-color: #C2C2C2; 
+    color: var(--text-color);
+    font-family: 'Antic Didone', serif;
+    box-shadow: -4px 4px 10px 0px rgba(7, 26, 62, 0.90);
+}
+
+#search-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0.94rem;
+}
+
+#city_search{
+    width: 14.5rem;
+    height: 2.5rem;    
+    border-radius: 20px;
+    background-color:var(--main-bg-card);
+    margin-bottom: 15px;
+    font-family: 'Antic Slab', serif;
+    font-size: 24px;
+    border-width: 0;
+    padding-left: 15px;
+    box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.30) inset, 4px 0px 4px 0px rgba(0, 0, 0, 0.30) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;  
+}
+
+
+input[type="submit"]{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 40px;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: var(--bg-rose, #DEB9E8);
+    border: 0.1px solid rgba(0, 0, 0, 0.10);
+    margin-left: 1.81rem;
+    background-image: url('../medias/arrow_down.svg');
+    background-repeat: no-repeat;
+    background-position:10px;
+}
+
+input[type="submit"].flecheup{
+    background-image:url('../medias/arrow_up.svg') ;
+    background-position: 6px 8px;
+}
+/* Slide Bar Open*/
+
+.invisible{
+    display: none;
+}
+
+#slide-bar-open{
+    position: relative;
+    background-color: #C2C2C2; 
+    z-index: 4;   
+    color: var(--text-color);
+    font-family: 'Antic Didone', serif;
+    height: 420px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.55);
+    border-radius: 0 0 12px 12px;    
+}
+.box-input{
+    margin-bottom: 20px;
+}
+
+.box-checkbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+#hasard{
+    margin-left: 30px;
+  }
+  
+#position-label, #hasard-label{
+      margin-left: 30px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    box-shadow: -2px 0px 2px 0px rgba(0, 0, 0, 0.30) inset, 2px 0px 2px 0px rgba(0, 0, 0, 0.30) inset, 2px -2px 2px 0px rgba(0, 0, 0, 0.25) inset, 0px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+    background-color: var(--main-bg-card);
+    border-width: 0px;
+    border-radius:20px;
+    width: 163px;
+    height: 11px;
+}
+input[type=checkbox]{
+    -webkit-appearance: none;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--main-bg-card);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-width: 0px;
+    border-radius:20px;
+    width: 20px;
+    height: 20px;
+}
+#setting-slide-bar{
+    background-color: #C2C2C2; 
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Antic Didone', serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+
+
+/* Page City*/
+.two_card{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_top, .card_bot {    
+    background-color: var(--main-bg-card);
+    border-radius: 20px;
+    border: solid 1px black;
+    color: var(--text-color);
+    margin: auto auto;
+    box-shadow: -5px 5px 13px 0px rgba(0, 0, 0, 0.90), 5px -5px 10px 0px rgba(255, 255, 255, 0.15), 5px 5px 10px 0px rgba(174, 174, 174, 0.20), 1px -1px 2px 0px rgba(174, 174, 174, 0.50) inset, -1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+    border-width: 0;
+}
+.card_top{   
+    width: 17.4375rem;
+    height: 4.375rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.card_bot{
+    width: 16.4375rem;
+    height: 23.0625rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin-top: 3.44rem;
+    flex-direction: column;   
+}
+.row{
+    width: auto;
+}
+
+/* */
+
+#weather_city{
+    display: flex;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#weather_logo{
+    margin-right: 10px;
+}
+
+#temp,#mmh{
+    padding-left: 8px;
+}
+
+#thermo_drop{
+    text-align: center;  
+    margin-bottom: 10px;    
+}
+
+#storm, #drop{
+    padding-right: 30px;    
+}
+
+#thermo{
+    padding-right: 45px;   
+}
+
+#thermo_img, #storm_img, #drop_img{
+    padding-right: 30px;
+    
+}
+
+#next_hour, #next_day{
+    border-radius: 12px;
+    background: rgba(217, 217, 217, 0.30);
+    box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.30) inset, 4px 0px 4px 0px rgba(0, 0, 0, 0.30) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    font-family: 'Antic Slab', serif;  
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-width: 0;
+    width: 235px;
+    height: 59px;
+}
+
+#logo_links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ytb_btn,#wiki_btn{
+    background: rgba(217, 217, 217, 0.30);
+    box-shadow: inset -4px 0px 4px 0px rgba(0, 0, 0, 0.30), inset 4px 0px 4px 0px rgba(0, 0, 0, 0.30), inset 0px -4px 4px 0px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    border-width: 0;
+    width: 70px;
+    height: 50px;
+}
+/*
+    main page
+*/
+
+#block-parameters{
+    padding-top:30px ;
+    padding-right: 20px;
+    text-align: end;
+    margin-bottom: 100px;
+}
+
+#logo{
+    text-align: center;
+}
+
+p{
+    padding: 25px 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+/*
+    Page Hour
+*/
+#two_card{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_front, .card_back {    
+    background-color: var(--main-bg-card);
+    width: 279px;
+    height: 487px;
+    border-radius: 20px;
+    border: solid 1px black;
+    box-shadow: -5px 5px 13px 0px rgba(0, 0, 0, 0.90), 5px -5px 10px 0px rgba(255, 255, 255, 0.15), 5px 5px 10px 0px rgba(174, 174, 174, 0.20), 1px -1px 2px 0px rgba(174, 174, 174, 0.50) inset, -1px 1px 2px 0px rgba(255, 255, 255, 0.30) inset;
+    border-width: 0;
+}
+
+.card_front{
+    z-index: 2;
+    position:absolute;
+    top: 60px;
+    left: 50px;   
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    text-shadow: 0.2 var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.card_back{
+    z-index: 1;
+    position:absolute;
+    top: 80px;
+    left: 70px;
+    color: var(--main-bg-card);
+}
+.city{
+    font-family: 'Antic Slab', serif;
+    font-size: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+.card_hour{
+    display: flex;
+    width: 237px;
+    height: 62px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px 0px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 12px;
+    background: rgba(217, 217, 217, 0.30);
+    padding-left: 15px;
+    margin-bottom: 38px;
+}
+.thermo, .drop{
+    display: flex;
+    font-size: 18px;
+}
+.thermo{
+    gap: 0 15px;
+}
+.drop{
+    gap: 12px;
+    margin-left: 18px;
+}
+.card_hour p{
+    padding: 0;
+    margin: 0;
+}
+
+.p_hour, #first_hour, #seconde_hour{
+    font-size: 16px;
+    display: flex;
+    align-items: center;   
+}
+
+.thermo_drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.logo_weather_little {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+.p_day{
+    font-size: 16px;
+    display: flex;
+    align-items: center;   
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Antic+Slab&family=Inter&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Weather App Najima</title>
+</head>
+
+<header>
+
+
+</header>
+
+<body>
+    <div class="container">      
+          
+            <div id="slide-bar">  
+                <div id="slide-bar-close">
+                    <form action="">
+                        <div id="search-box">
+                            <div><input type="text" id="city_search" name="search">
+                                <label for="search"></label>
+                            </div>
+                            <div>
+                                <input name="search" type="submit" id="submitbtn" value="">
+                            </div>                    
+                        </div>
+                    </form>
+                    </div>
+                    <div class="invisible" id="slide-bar-open">
+                    <form action="">
+                        <div id="setting-slide-bar">
+                            <div class="box-input">
+                                <label for="range-distance"> Etendre à</label>
+                                <input type="range" id="range-distance" name="range-distance" min="0" max="2000">
+                                <label for="range-min">km</label>
+                            </div>
+        
+                            <div class="box-checkbox">
+                                <div>
+                                    <input type="checkbox" name="checkbox" id="hasard">
+                                    <label id="hasard-label" for="checkbox">Je laisse faire le hasard</label>
+                                </div> 
+                                <div> 
+                                    <input type="checkbox" name="checkbox" id="position">
+                                    <label id="position-label" for="checkbox">J’utilise ma position</label>
+                                </div>
+                            </div>
+        
+                            <div class="box-input">
+                                <label for="temperature-min">Température</label>
+                                <input type="range" id="range-temp-min" name="temperature-min" min="-20" max="50">
+                                <label for="temperature-min">min</label>
+                            </div>
+        
+                            <div class="box-input">
+                                <label for="temperature-max">Température</label>
+                                <input type="range" id="range-temp-max" name="temperature-max" min="-20" max="50">
+                                <label for="temperature-min">min</label>
+                            </div>
+                            <div><img id="search_img" src="medias/two_carte_slide_bar.svg" alt="2 cartes rose avec un soleil et un nuage"></div>
+                        </div>
+                    </form>
+                    </div>
+                </div>     
+                    <!-- Slider main container -->
+            <div class="swiper">
+                    <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="two-card">
+                            <div class="card_back">
+                
+                            </div>
+                
+                            <div class="card_front">
+                                <h2 class="city">HAMBURG</h2>
+                                <div box_card_hour>
+                                    <div class="card_hour">
+                                        <p class="p_day">Mar</p>
+                                        <div class="thermo_drop">
+                                            <div class="thermo">
+                                                <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                                <p>23°C</p>
+                                            </div>
+                                            <div class="drop">
+                                                <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                                <p class="humidity">6 mm/h</p>
+                                            </div>
+                                        </div>
+                                        <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                    </div>
+                
+                                    <div class="card_hour">
+                                        <p class="p_day">Mer</p>
+                                        <div class="thermo_drop">
+                                            <div class="thermo">
+                                                <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                                <p>23°C</p>
+                                            </div>
+                                            <div class="drop">
+                                                <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                                <p class="humidity">6 mm/h</p>
+                                            </div>
+                                        </div>
+                                        <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                    </div>
+                
+                                    <div class="card_hour">
+                                        <p class="p_day">Jeu</p>
+                                        <div class="thermo_drop">
+                                            <div class="thermo">
+                                                <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                                <p>23°C</p>
+                                            </div>
+                                            <div class="drop">
+                                                <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                                <p>6 mm/h</p>
+                                            </div>
+                                        </div>
+                                        <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                    </div>
+                
+                                    <div class="card_hour">
+                                        <p class="p_day">Ven</p>
+                                        <div class="thermo_drop">
+                                            <div class="thermo">
+                                                <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                                <p class="txt_card_hour">23°C</p>
+                                            </div>
+                                            <div class="drop">
+                                                <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                                <p class="txt_card_hour">6 mm/h</p>
+                                            </div>
+                                        </div>
+                                        <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                    
+                
+                    <div class="swiper-slide">
+                        <div class="two_card">
+                            
+                            <div class="row">
+                                <div class="card_top">
+                                    <h2 class="city">HAMBOURG</h2>
+                                </div>
+
+                                <div class="card_bot">
+                                    <div id="weather_city">
+                                        <img id="weather_logo" src="/medias/sunny.svg" alt="" width="80.706px" height="80px">   
+                                        <div id="thermo_drop">
+                                            <div id="thermo"><img id="thermo_img" src="/medias/thermometer.svg" alt="Thermo noir"> <span id="temp">23°C</span> </div>
+                                            <div id="storm"><img id="storm_img" src="/medias/storm.svg" alt=""><span id="kmh">31 km/h</span></div>
+                                            <div id="drop"><img id="drop_img" src="/medias/drop.svg" alt="Goute noir"><span id="mmh">6 mm/h</span></div>
+                                        </div>
+                                    </div>
+
+                                    <button id="next_hour">Prochaines heures</button>
+                                    <button id="next_day">Prochains jours</button>
+                                    <div id="logo_links">
+                                        <button id="ytb_btn"><a href="http://"><img id="ytb_logo" src="/medias/logo_youtube.svg" alt="" width="42.4px" height="30px"></a></button>
+                                        <button id="wiki_btn"><a href="http://"><img id="wiki_logo" src="/medias/logo_wiki.svg" alt="" width="40px" height="40px"></a></button>
+                                    </div>
+                                    
+                                </div>
+                            </div> 
+                        </div>
+                
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="two-card">
+                            <div class="card_back">
+                
+                            </div>
+                        <div class="card_front">
+                            <h2 class="city">BUCHHOLZ IN DER NORDHEIDE</h2>
+                            <div>
+                                <div class="card_hour">
+                                    <p id="first_hour">10:00</p>
+                                    <div class="thermo_drop">
+                                        <div class="thermo">
+                                            <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                            <p id="first_temp">23°C</p>
+                                        </div>
+                                        <div class="drop">
+                                            <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                            <p id="first_humidity">6 mm/h</p>
+                                        </div>
+                                    </div>
+                                    <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                </div>
+            
+                                <div class="card_hour">
+                                    <p id="seconde_hour">11:00</p>
+                                    <div class="thermo_drop">
+                                        <div class="thermo">
+                                            <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                            <p>23°C</p>
+                                        </div>
+                                        <div class="drop">
+                                            <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                            <p class="humidity">6 mm/h</p>
+                                        </div>
+                                    </div>
+                                    <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                </div>
+            
+                                <div class="card_hour">
+                                    <p class="p_hour">12:00</p>
+                                    <div class="thermo_drop">
+                                        <div class="thermo">
+                                            <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                            <p>23°C</p>
+                                        </div>
+                                        <div class="drop">
+                                            <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                            <p>6 mm/h</p>
+                                        </div>
+                                    </div>
+                                    <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                </div>
+            
+                                <div class="card_hour">
+                                    <p class="p_hour">13:00</p>
+                                    <div class="thermo_drop">
+                                        <div class="thermo">
+                                            <div><img src="Medias/thermometer.svg" alt="" width="7px" height="22px"></div>
+                                            <p class="temps_hour">23°C</p>
+                                        </div>
+                                        <div class="drop">
+                                            <div><img src="Medias/drop.svg" alt="" width="11px" height="15px"></div>
+                                            <p class="humidity_hour">6 mm/h</p>
+                                        </div>
+                                    </div>
+                                    <div class="logo_weather_little"><img class="logo_weather_little" src="Medias/sunny_little.svg" alt="" width="41px" height="40px"></div>                
+                                </div>
+                                </div>
+                            </div>
+                        </div> 
+                            </div>
+            </div>
+        </div>  
+</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        initialSlide:1,
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
