@@ -90,7 +90,9 @@ submitButton.addEventListener("click", event => {
             const cityWeather = document.querySelectorAll('.city');
             cityWeather.forEach(element => element.innerText = data.name.toUpperCase());
 
+            
             const weatherLogo = document.getElementById("weather_logo");
+            // Switch pour afficher les images en fonction de la météo
             switch(data.weather.main){
                 case "clear sky":
                     weatherLogo.src = "./medias/sunny.svg";
@@ -113,11 +115,12 @@ submitButton.addEventListener("click", event => {
                     break;
             }
 
+            // Permet de modifier le texte html avec les infos récupérés
             document.getElementById("temp").innerText = data.main.temp + "°C";
             document.getElementById("kmh").innerText = data.wind.speed + "km/h";
             document.getElementById("mmh").innerText = data.main.humidity + "%";
 
-             //Permet de Basculer la classe
+                //Permet de Basculer la classe
                 slideBarOpen.classList.toggle("invisible");
                 //Permet de basculer la  classe
                 deployButton.classList.toggle("flecheup");
@@ -142,6 +145,7 @@ deployButton.addEventListener('click', (event) =>{
 let nextHour = document.getElementById('next_hour');
 let nextDay = document.getElementById('next_day');
 
+// Permet d'exécuter la transition des slides via les boutons prochaines heures et prochains jours
 nextHour.addEventListener('click', (event)=> {
     swiper.slideTo(2);
 });
@@ -150,9 +154,8 @@ nextDay.addEventListener('click', (event)=>{
 });
 
 //fetch pour la météo des prochaines heures
-//fetch pour la météo des prochains jours
 
-nextHour.addEventListener("click", event => {
+submitButton.addEventListener("click", event => {
     console.log("ok");
     event.preventDefault(); //Permet de stopper le comportement du bouton.
     
@@ -188,7 +191,36 @@ nextHour.addEventListener("click", event => {
             document.getElementById("first_temp").innerText = data.list[0].main.temp + "°C";
 
             document.getElementById("first_humidity").innerText = data.list[0].main.humidity + " mm/h";
+            
+            document.getElementById("second_temp").innerText = data.list[1].main.temp + "°C";
 
+            document.getElementById("second_humidity").innerText = data.list[1].main.humidity + " mm/h";
+            
+            document.getElementById("third_temp").innerText = data.list[2].main.temp + "°C";
+
+            document.getElementById("third_humidity").innerText = data.list[2].main.humidity + " mm/h";
+            
+            document.getElementById("fourth_temp").innerText = data.list[3].main.temp + "°C";
+
+            document.getElementById("fourth_humidity").innerText = data.list[3].main.humidity + " mm/h";
+
+            document.getElementById("first_day_temp").innerText = data.list[8].main.temp + "°C";
+    
+            document.getElementById("first_day_humidity").innerText = data.list[8].main.humidity + " mm/h";
+            
+            document.getElementById("second_day_temp").innerText = data.list[16].main.temp + "°C";
+
+            document.getElementById("second_day_humidity").innerText = data.list[16].main.humidity + " mm/h";
+            
+            document.getElementById("third_day_temp").innerText = data.list[24].main.temp + "°C";
+
+            document.getElementById("third_day_humidity").innerText = data.list[24].main.humidity + " mm/h";
+            
+            document.getElementById("fourth_day_temp").innerText = data.list[32].main.temp + "°C";
+
+            document.getElementById("fourth_day_humidity").innerText = data.list[32].main.humidity + " mm/h";
             })
         })
     });
+
+    
