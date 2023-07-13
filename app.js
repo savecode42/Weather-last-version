@@ -124,6 +124,9 @@ submitButton.addEventListener("click", event => {
                 slideBarOpen.classList.toggle("invisible");
                 //Permet de basculer la  classe
                 deployButton.classList.toggle("flecheup");
+
+                const timeStamp = data.dt;            
+                console.log(dateHour(timeStamp));
         })
     })
     
@@ -219,8 +222,29 @@ submitButton.addEventListener("click", event => {
             document.getElementById("fourth_day_temp").innerText = data.list[32].main.temp + "°C";
 
             document.getElementById("fourth_day_humidity").innerText = data.list[32].main.humidity + " mm/h";
+
+            document.getElementById("first_day").innerText = daysNow;
             })
         })
     });
 
-    
+     function dateHour (){
+        
+           
+
+    }
+    let date = new Date();
+    console.log(date);
+    let daysArray = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
+    console.log(daysArray);
+    let day1 = date.getDay();
+    console.log(day1);
+    day1 = day1 + 1;
+    console.log(day1);
+    let daysNow = daysArray[day1];
+    console.log(daysNow);
+
+
+
+
+
