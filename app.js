@@ -1,5 +1,27 @@
 
 
+
+
+
+
+
+// let daysArray = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam","Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
+// console.log(daysArray);
+// let dayGet = date.getDay();
+// console.log(dayGet);
+
+// for (let i = 1; i < 5; i++){
+//     let dayI = dayGet+i;
+//     console.log(dayI);
+//     console.log(daysArray[dayI]);
+//     document.getElementById("first_day").innerText = daysArray[dayI];
+//     document.getElementById("second_day").innerText = daysArray[dayI];
+//     document.getElementById("third_day").innerText = daysArray[dayI];
+//     document.getElementById("fourth_day").innerText = daysArray[dayI];
+
+// }
+
+
 /*
 * API weather Map avec recherche par lat et lon
 * https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
@@ -182,7 +204,7 @@ submitButton.addEventListener("click", event => {
         console.log(data[0].lon)
 
         const apiQuery = apiRootForcast + lat + "&lon=" + lon + "&appid=" + apiKey + "&units=metric";
-        console.log(apiQuery);
+        console.log(apiQuery);      
 
         fetch(apiQuery)
         .then((reponse)=>{
@@ -223,27 +245,14 @@ submitButton.addEventListener("click", event => {
 
             document.getElementById("fourth_day_humidity").innerText = data.list[32].main.humidity + " mm/h";
 
-            document.getElementById("first_day").innerText = daysNow;
+            let dateImp = data.list[4].dt_txt.toLocaleString("fr-FR", {weekday: "long"});
+            document.getElementById("first_day").innerText = dateImp.toLocaleString("fr-FR", {weekday: "long"});
+            
             })
         })
     });
 
-     function dateHour (){
-        
-           
-
-    }
-    let date = new Date();
-    console.log(date);
-    let daysArray = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
-    console.log(daysArray);
-    let day1 = date.getDay();
-    console.log(day1);
-    day1 = day1 + 1;
-    console.log(day1);
-    let daysNow = daysArray[day1];
-    console.log(daysNow);
-
+   
 
 
 

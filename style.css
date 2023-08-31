@@ -17,6 +17,7 @@ body{
     color: #A3B2BF;
     height:667px;    
     border-radius: 12px;
+    
 }
 
 .swiper {
@@ -80,7 +81,7 @@ input[type="submit"].flecheup{
 #slide-bar-open{
     position: relative;
     background-color: #C2C2C2; 
-    z-index: 4;   
+    z-index: 5;   
     color: var(--text-color);
     font-family: 'Antic Didone', serif;
     height: 420px;
