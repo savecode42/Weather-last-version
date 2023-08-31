@@ -1,31 +1,25 @@
 # Weather App Najima
-????
-
-???
-
-????
 
 ## Pour commencer
-La Weather App Najima est née d'un projet de formation.
-Chaque stagiaire de la formation devait créer une maquette pour qu'ensuite un autre stagiaire devait s'occupé du développement.
-Vous êtes donc devant le projet de Najima et Damien, stagiaire de chez Online Formapro à Besançon.
+La Weather App Najima est issue d'un projet de formation collaboratif. Chaque stagiaire de la formation s'est vu attribuer la tâche de créer une maquette, suivie du développement réalisé par un autre stagiaire. Ainsi, vous vous trouvez actuellement face au projet conjoint de Najima et Damien, tous deux stagiaires chez Online Formapro à Besançon. Cette collaboration a permis de mettre en commun nos compétences et expertises pour aboutir à cette application météo.
  
 
 ### Pré-requis
 
-Pour réaliser ce projet vous aurez besoin de :
+Pour mener à bien ce projet, vous aurez besoin des éléments suivants :
 
-- De connaissance en HTML, CSS et Javascript
-- Un outil de prototypage (Exemple Figma)
-- Un éditeur de code (Exemple VSCode)
-- Un compte GitHub
+    Des connaissances en HTML, CSS et Javascript
+    Un outil de prototypage, tel que Figma
+    Un éditeur de code, comme VSCode (avec l'extension live server)
+    Un compte GitHub
 
 ### Installation
+Vous avez simplement à télécharger le dossier et le décrompresser.
 
-En l'état actuel pour lancer l'application vous 
+
 
 ## Démarrage
-
+Une fois le fichier décompresser vous aurez cas ouvrir le dossier via Vscode et lancer l'extension live server pour visualiser 
 
 ## Fabriqué avec
 
@@ -33,22 +27,16 @@ En l'état actuel pour lancer l'application vous
 * [VSCode] (https://code.visualstudio.com/download) - Editeur de code
 * [Swipper] (https://swiperjs.com/) - Framework qui permet de slider 
 
-
-## Contributing
-
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
-
 ## Versions
-Listez les versions ici 
-_exemple :_
-**Dernière version stable :** 5.0
-**Dernière version :** 5.1
-Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
-_(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
+
+**Dernière version stable :** 2.1
+
+Liste des versions : [Cliquer pour afficher](https://github.com/savecode42/Weather-last-version/tags)
+
 
 ## Auteurs
 * **Najima**
-* ** Mad Orion**  _alias_ [@savecode42](https://github.com/savecode42)
+* ** Damien**  _alias_ [@savecode42](https://github.com/savecode42)
 
 
 ## License
